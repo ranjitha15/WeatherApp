@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <form method="post">
+          <input type="text" name="city" class="input" placeholder="Enter a city">
+          <br><br>
+          <input type="submit" class="button" value = "Get temperature">
+
+        </form>
+        <% if(weather !== null) { %>
+          <p><%= weather %></p>
+        <% } %>
+        <% if(error !== null) { %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+
+    </div>
+  </body>
+</html>
